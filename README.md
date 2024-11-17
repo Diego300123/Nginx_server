@@ -214,3 +214,11 @@ Asignar el propietario y permisos correctos
 sudo chown -R www-data:www-data /var/www/new_web
 sudo chmod -R 755 /var/www/new_web
 ```
+
+### Ejercicio 6
+### Apartado 1
+Si no creas el enlace simbólico entre sites-available y sites-enabled para tu sitio web en nginx, el servidor no reconocerá tu configuración.
+Nginx solo carga los archivos de configuración que están en la carpeta sites-enabled.
+
+### Apartado 2
+Si no configuras los permisos correctos para /var/www/nombre_web, es probable que nginx no pueda acceder a los archivos del sitio web. Esto puede causar varios tipos problemas.
